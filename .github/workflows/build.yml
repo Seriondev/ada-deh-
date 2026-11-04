@@ -444,7 +444,7 @@ jobs:
                   }
 
                   private static void coverAll(MinecraftClient client, ClientWorld world, ClientPlayerEntity player) {
-                      int r = client.options.getClientViewDistance().getValue();
+                      int r = 16;
                       ChunkPos pc = player.getChunkPos();
                       for (int cx = pc.x - r; cx <= pc.x + r; cx++) {
                           for (int cz = pc.z - r; cz <= pc.z + r; cz++) {
